@@ -1,0 +1,6 @@
+<table class="people">
+	<tr><th>id</th><th>name</th><th>age</th><th>actions</th></tr>
+		<tr ng-repeat="user in users | filter: query track by $index">
+			<td>{{user.id}}</td><td>{{user.name}}</td><td>{{user.age}}</td><td><button ng-click="deleteUser(user.id, $index);"> delete </button></td>
+		</tr>
+</table>

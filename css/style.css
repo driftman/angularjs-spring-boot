@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: helvetica, sans-serif;
+	max-width: 75%;
+	position: relative;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, #2196F3 20%, #E3F2FD );
+	background-attachment: fixed;
+}
+.myApp {
+	max-width: 100%;
+}
+p {
+	overflow: auto;
+}
+.people  {
+	min-width: 100%;
+}
+.people  th, .people  td {
+	border: 1px solid black;
+	padding: 10px;
+}
+button {
+	border: 2px solid #0D47A1;
+	background: transparent;
+	color: #0D47A1;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.user-container {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.users {
+	width: inherit;
+	border-radius: 3px;
+	text-align: center;
+}
+#user {
+	display: inline-block;
+	width: 30%;
+	border: 1px solid black;
+	padding: 5px;
+	margin-right: 10px;
+	margin-bottom:10px;
+	text-align: center
+}
+tr:last-child, td:first-child {
+	border-bottom-left-radius: 5px;
+}
+tr:last-child, td:last-child {
+	border-bottom-right-radius: 5px;
+}
+tr:first-child, th:first-child {
+	border-top-left-radius: 5px;
+}
+tr:first-child, th:last-child {
+	border-top-left-radius: 5px;
+}

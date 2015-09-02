@@ -1,0 +1,18 @@
+		<nav class="text-center">
+			<ul class="pagination">
+			    <li>
+			      <a href="#/users/0" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li>
+			    	<a href="#/users/{{$index}}" ng-repeat="i in [].constructor(totalPages) track by $index">{{ $index + 1 }}</a>
+			    </li>
+			    <li>
+			      <a href="#/users/{{totalPages-1}}" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			</ul>
+		</nav>
+		totalPages = {{totalPages}}

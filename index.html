@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<head>
+		<script src="./js/jquery-2.1.4.min.js"></script>
+
+		<script src="./js/bootstrap.min.js"></script>
+		
+		<script src="./js/angular.min.js"></script>
+		<script src="./js/angular-route.min.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/directives.js"></script>
+		<script src="./js/services.js"></script>
+		<script src="./js/controllers.js"></script>
+		<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	</head>
+	<body  ng-app="myApp">
+
+		<custom-top-bar></custom-top-bar>
+		
+		<div style="margin-top: 35px;">
+			
+
+			<home-header></home-header>
+
+			<div ng-view></div>
+		</div>
+
+	</body>
+</html>
